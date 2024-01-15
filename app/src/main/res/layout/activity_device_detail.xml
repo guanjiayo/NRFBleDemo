@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_lib_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android-Ble-Libray"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_connect1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@id/action_disconnect1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lib_name1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_disconnect1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/action_connect1"
+        app:layout_constraintTop_toBottomOf="@id/tv_lib_name1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_read1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@id/action_write1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/action_connect1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_write1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/action_read1"
+        app:layout_constraintTop_toBottomOf="@id/action_connect1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_divide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/tv_lib_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kotlin-Ble-Libray"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideline_divide" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_connect2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@id/action_disconnect2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_lib_name2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_disconnect2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disconnect"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/action_connect2"
+        app:layout_constraintTop_toBottomOf="@id/tv_lib_name2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_read2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Read"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toStartOf="@id/action_write2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/action_connect2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_write2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/action_read2"
+        app:layout_constraintTop_toBottomOf="@id/action_connect2" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
