@@ -24,3 +24,7 @@ https://github.com/NordicSemiconductor/Android-nRF-Blinky
 1. ClientBleGatt.connect(xxx) 获取ClientBleGatt对象
 2. ClientBleGatt.discoverServices() 拿到蓝牙设备所有Services和Characteristic
 3. 拿到ClientBleGattCharacteristic,按需订阅通知,读写操作即可
+
+---
+
+### Android-Scanner-Compat-Library
